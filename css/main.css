@@ -112,10 +112,7 @@ header {
 	letter-spacing: 1px;
 }
 
-.btn-zoom,
-.btn-share {
-	display: none;
-}
+
 /*==============================*/
 #banner_sect {
 	height: 800px;
@@ -213,12 +210,71 @@ header {
 		justify-content: space-between;
 		align-items: center;
 	}
-		.gal-item img {
+		.gal-item {
 			width: 360px;
 			height: 260px;
+			background-color: #15a4fa;
+		}
+		.gal-item img {
+			width: 100%;
+			height: 100%;
+			opacity: 1;
+			transition: 1.3s;
 		}
 	#portfolio_sect .textu {
 		height: 112px;
+	}
+
+	/* galery, style for js */
+	#galery {
+		position: relative;
+	}
+	.gal-item {
+		position: relative;
+	}
+	.btn-zoom,
+	.btn-share {
+		display: none;
+		justify-content: center;
+		align-items: center;
+		position: absolute;
+		top: 110px;
+
+	    color: #ffffff;
+	    width: 42px;
+	    height: 42px;
+
+	    border-radius: 2px;
+	    border: 1px solid #ffffff;
+		background-color: #15a4fa;
+	}
+	.btn-share {
+		left: 186px;
+	}
+	.btn-zoom {
+		left: 134px;
+	}
+	#myModal {
+		display: none;
+		position: absolute;
+		top: 17px;
+		left: 0;
+		width: 100%;
+		height: 556px;
+
+	    background-repeat: no-repeat !important;
+    	background-size: cover !important;
+    	background-position: center !important;
+	}
+	#myModal span {
+		position: absolute;
+		right: 32px;
+		top: -23px;
+		padding: 15px;
+		background-color: #fa4b15;
+		color: #f6f9f9;
+		width: 15px;
+		cursor: pointer;
 	}
 
 #stay_sect {
