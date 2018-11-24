@@ -12,9 +12,9 @@ input::placeholder {
 	font-weight: 400;
 	color: #999999;
 }
-input::placeholder {
+input {
 	padding-left: 20px;
-	padding-top: 25px;
+	color: #fff;
 }
 
 .inner {
@@ -267,15 +267,23 @@ header {
     	background-position: center !important;
 	}
 	#myModal span {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 40px;
+		height: 40px;
+
 		position: absolute;
 		right: 32px;
 		top: -23px;
-		padding: 15px;
-		background-color: #fa4b15;
+		background-color: #15a4fa;
 		color: #f6f9f9;
-		width: 15px;
 		cursor: pointer;
+		transition: 1.3s;
 	}
+		#myModal span:hover {
+			background-color: #fa4b15;
+		}
 
 #stay_sect {
 	height: 700px;
@@ -339,7 +347,38 @@ header {
 footer {
 	height: 90px;
 }
+	#social,
+	.soc {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: row;
+	}
 	footer .social {
 		width: 175px;
 		height: 40px;
 	}
+	#social {
+		width: 175px;
+		justify-content: space-between;
+	}
+	.soc {
+		width: 40px;
+		height: 40px;
+		color: #fff;
+		border-radius: 2px;
+		background-color: #15a4fa;
+		transition: 1.3s;
+	}
+		#fb:hover {
+			background-color: #3b5998;
+		}
+		#tw:hover {
+			background-color: #55acee;
+		}
+		#gp:hover {
+			background-color: #dd4b39;
+		}
+		#in:hover {
+			background-color: #0976b4;
+		}
